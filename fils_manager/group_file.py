@@ -14,9 +14,8 @@ def group_file_in_dir(dir_source: str, dir_rezult: str):
     os.chdir("..")
     create_dir(dir_rezult)
 
-    folder_track = Path(Path.cwd() / dir_source)          #C:\Users\Алексей\Desktop\GreekBrains\СЕМИНАРЫ\Python_advanced\pythonProject\Semin_7\new
-    folder_move = Path(Path.cwd() / dir_rezult)           #C:\Users\Алексей\Desktop\GreekBrains\СЕМИНАРЫ\Python_advanced\pythonProject\Semin_7\rezult
-
+    folder_track = Path(Path.cwd() / dir_source)         
+    folder_move = Path(Path.cwd() / dir_rezult)        
     files = os.listdir(folder_track)  # список всех файлов директория
 
     for items in files:
